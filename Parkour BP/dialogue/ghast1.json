@@ -6,19 +6,19 @@
       {
         "scene_tag": "ghast1_intro",
         "npc_name": "§5가스트1",
-        "text": "흑... 여기까지 왔군.\n\n이곳은 §1미노타우루스의 미로§r.\n그냥 달리면 절대 못 나가.\n\n여기엔 §6수학§r이 숨어 있어.\n§1배수§r를 알아야 탈출할 수 있지.",
+        "text": "흑... 잠깐.\n\n그냥 뛰는 파쿠르로는 부족해.\n학생들을 위한 맵이라면\n§1배워가는 것§r이 있어야 해.\n\n이 미로가 그걸 보여줄게.",
         "buttons": [
           {
-            "name": "왜 수학이 필요해?",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_why"]
+            "name": "학습 요소가 왜 필요해?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_learning"]
           },
           {
-            "name": "미노타우루스가 뭐야?",
+            "name": "스토리는 왜 넣어?",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_story"]
           },
           {
-            "name": "미로는 어떻게 풀어?",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+            "name": "이 맵의 예시를 알려줘",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_example"]
           },
           {
             "name": "퀴즈 도전!",
@@ -32,17 +32,17 @@
       },
 
       {
-        "scene_tag": "ghast1_why",
+        "scene_tag": "ghast1_learning",
         "npc_name": "§5가스트1",
-        "text": "흑... 좋은 맵은 말이야.\n\n그냥 뛰고 끝나면 안 돼.\n§6배운 게 남아야§r 진짜 맵이야.\n\n이 미로는 §1배수§r를 모르면\n길을 찾을 수 없어.\n탈출하면서 수학을 배우는 거지.",
+        "text": "흑... 맵을 지나고 나면\n뭔가 §1남아야§r 해.\n\n그냥 점프하고 끝이면\n게임일 뿐이야.\n\n하지만 §6개념을 배우며§r 풀어가면\n그게 진짜 §1교육용 맵§r이 되는 거야.",
         "buttons": [
           {
             "name": "← 돌아가기",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
           },
           {
-            "name": "미로는 어떻게 풀어?",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+            "name": "스토리는 왜 넣어?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_story"]
           },
           {
             "name": "그럼 이만.",
@@ -54,15 +54,15 @@
       {
         "scene_tag": "ghast1_story",
         "npc_name": "§5가스트1",
-        "text": "흑... 옛날 그리스 신화야.\n\n크레타 섬 미로 안에\n§c미노타우루스§r가 갇혀 있었어.\n소의 머리, 인간의 몸.\n\n영웅 §6테세우스§r가\n그 괴물을 물리치고 탈출했지.\n이 맵이 바로 그 이야기야.",
+        "text": "스토리가 있으면...\n흑, 몰입이 달라.\n\n그냥 '미로를 풀어라'가 아니라\n§6미노타우루스를 쓰러뜨려라.§r\n\n같은 문제도 §1이야기 속§r에 있으면\n학생들이 더 깊이 들어와.",
         "buttons": [
           {
             "name": "← 돌아가기",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
           },
           {
-            "name": "미로는 어떻게 풀어?",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+            "name": "이 맵의 예시를 알려줘",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_example"]
           },
           {
             "name": "그럼 이만.",
@@ -72,37 +72,13 @@
       },
 
       {
-        "scene_tag": "ghast1_how",
+        "scene_tag": "ghast1_example",
         "npc_name": "§5가스트1",
-        "text": "입구가 §14군데§r야.\n각 입구에 숫자가 있어.\n\n하나를 골라 들어가.\n갈림길에서는\n§6그 숫자의 배수§r인 길을 선택해.\n\n배수를 따라가면\n§c미노타우루스§r가 있는 곳에 도착해.",
+        "text": "이 미로가 딱 그 예야.\n\n§1학습 요소§r → §6배수§r\n갈림길에서 배수를 골라야 앞으로 나가.\n\n§1스토리§r → §6그리스 신화§r\n미노타우루스를 찾아 쓰러뜨리는 여정.\n\n둘이 합쳐지면\n§c진짜 교육 맵§r이 되는 거야.",
         "buttons": [
           {
             "name": "← 돌아가기",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
-          },
-          {
-            "name": "배수가 뭐야?",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_multiples"]
-          },
-          {
-            "name": "퀴즈 도전!",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_quiz"]
-          },
-          {
-            "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
-          }
-        ]
-      },
-
-      {
-        "scene_tag": "ghast1_multiples",
-        "npc_name": "§5가스트1",
-        "text": "배수는...\n어떤 수의 §1정수배§r가 되는 수야.\n\n3의 배수 → §63, 6, 9, 12...§r\n4의 배수 → §64, 8, 12, 16...§r\n\n갈림길 숫자가\n내가 고른 수로 나누어지면\n그 길이 정답이야.",
-        "buttons": [
-          {
-            "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
           },
           {
             "name": "퀴즈 도전!",
@@ -118,18 +94,18 @@
       {
         "scene_tag": "ghast1_quiz",
         "npc_name": "§5가스트1",
-        "text": "흑... 테스트할게.\n\n입구에서 §13§r을 골랐어.\n갈림길에 §66번, 7번, 11번§r 길이 있어.\n\n어느 길로 가야 해?",
+        "text": "흑... 테스트야.\n\n좋은 교육용 파쿠르 맵의\n조건은 뭐야?",
         "buttons": [
           {
-            "name": "6번 길",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_correct"]
-          },
-          {
-            "name": "7번 길",
+            "name": "재미있으면 된다",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_wrong"]
           },
           {
-            "name": "11번 길",
+            "name": "학습 요소와 스토리가 있어야 한다",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_correct"]
+          },
+          {
+            "name": "어려울수록 좋다",
             "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_wrong"]
           },
           {
@@ -142,7 +118,7 @@
       {
         "scene_tag": "ghast1_correct",
         "npc_name": "§5가스트1",
-        "text": "맞아! 흑...\n\n§16번§r은 3x2.\n§23의 배수§r니까 정답이야.\n\n7과 11은 3으로 나누어지지 않아.\n이 원리로 미로를 풀어나가는 거야.\n\n테세우스가 될 수 있어.",
+        "text": "맞아. 흑...\n\n§1학습 요소§r가 있어야\n뭔가 배우고 나가.\n\n§6스토리§r가 있어야\n끝까지 몰입해서 풀어.\n\n이 두 가지가 합쳐질 때\n§c진짜 교육 맵§r이 완성돼.",
         "buttons": [
           {
             "name": "← 처음으로",
@@ -158,11 +134,11 @@
       {
         "scene_tag": "ghast1_wrong",
         "npc_name": "§5가스트1",
-        "text": "흑... 틀렸어.\n\n3을 골랐으면\n§13으로 나누어지는 수§r를 찾아야 해.\n\n6 = 3x2 → §2정답§r\n7, 11 → §c3의 배수 아님§r\n\n배수를 다시 확인해봐.",
+        "text": "흑... 틀렸어.\n\n재미나 난이도만으론 부족해.\n\n§1학습 요소§r → 배우고 나가야 해.\n§6스토리§r → 몰입해서 풀어야 해.\n\n둘 다 있어야 교육 맵이야.",
         "buttons": [
           {
-            "name": "← 배수 다시 보기",
-            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_multiples"]
+            "name": "← 예시 다시 보기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_example"]
           },
           {
             "name": "퀴즈 다시!",
@@ -178,7 +154,7 @@
       {
         "scene_tag": "ghast1_bye",
         "npc_name": "§5가스트1",
-        "text": "흑...\n배수를 기억해.\n\n미로 안에서 길을 잃으면\n숫자를 봐.\n\n§c미노타우루스§r를 쓰러뜨려.",
+        "text": "흑...\n\n§1배우는 것§r과 §6이야기§r.\n그게 이 맵의 전부야.\n\n미로 안으로 들어가.",
         "buttons": []
       }
 
