@@ -8,7 +8,7 @@
 scoreboard objectives add pk_setup dummy
 
 # 아직 설정 안 된 경우에만 dialogue change 실행
-execute as @a[scores={pk_setup=0}] run dialogue change @e[type=npc,name=엔더맨1] enderman1_intro
+execute as @a[scores={pk_setup=0}] run dialogue change @e[name=엔더맨1] enderman1_intro
 
 # 설정 완료 표시
 scoreboard players set @a[scores={pk_setup=0}] pk_setup 1
