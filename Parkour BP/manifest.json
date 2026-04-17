@@ -1,0 +1,20 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Parkour",
+    "description": "파쿠르 게임 애드온 - by stevecoding",
+    "uuid": "1fba21bc-9b47-4976-8d16-90ff5c6e25a8",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "cd9622d8-addb-42aa-9abb-bda64681d683",
+      "version": [1, 0, 0]
+    }
+  ],
+  "metadata": {
+    "authors": ["stevecoding"]
+  }
+}

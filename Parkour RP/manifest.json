@@ -1,0 +1,21 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Parkour",
+    "description": "파쿠르 게임 리소스 팩 - stevecoding",
+    "uuid": "6acda3a8-191d-4fc9-bab6-5798e9e7e2ea",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "5a10e25e-7168-4c9c-8b62-4881fb4b139a",
+      "version": [1, 0, 0]
+    }
+  ],
+  "metadata": {
+    "authors": ["stevecoding"],
+    "license": "MIT"
+  }
+}
