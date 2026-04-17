@@ -1,14 +1,14 @@
 # =====================================================
 #  auto_dialogue.mcfunction
 #  tick.json에 의해 매 틱 실행됨
-#  NPC 근처 플레이어에게 대화를 1회만 자동 열기
+#  엔더맨 NPC에 대화 씬을 등록 (1회만 실행)
 # =====================================================
 
-# 스코어보드 생성 (이미 존재하면 무시됨)
-scoreboard objectives add pk_npc1 dummy
+# 최초 1회만 실행하기 위한 스코어보드
+scoreboard objectives add pk_setup dummy
 
-# 엔더맨1 NPC 위치 기준 5블록 이내, 아직 대화를 못 본 플레이어에게 대화 열기
-execute as @e[type=npc,name=엔더맨1] at @s run dialogue open @s @a[r=5,scores={pk_npc1=0}] enderman1_intro
+# 아직 설정 안 된 경우에만 dialogue change 실행
+execute as @a[scores={pk_setup=0}] run dialogue change @e[type=npc,name=엔더맨1] enderman1_intro
 
-# 대화를 열었으면 스코어를 1로 설정해서 다시 열리지 않게 함
-execute as @e[type=npc,name=엔더맨1] at @s run scoreboard players set @a[r=5,scores={pk_npc1=0}] pk_npc1 1
+# 설정 완료 표시
+scoreboard players set @a[scores={pk_setup=0}] pk_setup 1
