@@ -1,0 +1,167 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "ghast2_intro",
+        "npc_name": "§5가스트2",
+        "text": "흑... 나한테 말 거는 거야?\n\n사실... §1나도 NPC야.§r\n누군가 만들어 놓은 거지.\n\nNPC는 이 맵처럼\n§6스토리와 상호작용§r을\n만들어낼 수 있어.",
+        "buttons": [
+          {
+            "name": "NPC를 어떻게 만들어?",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_permission"]
+          },
+          {
+            "name": "명령어는 어떻게 넣어?",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_commands"]
+          },
+          {
+            "name": "스토리텔링은?",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_story"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_permission",
+        "npc_name": "§5가스트2",
+        "text": "NPC를 소환하고 편집하려면\n§1월드빌더 권한§r이 필요해.\n\n운영자 상태에서\n§6/wb§r 명령어를 입력하면\n월드빌더 권한을 얻을 수 있어.\n\n그 다음엔 NPC를 클릭하면 돼.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_intro"]
+          },
+          {
+            "name": "명령어는 어떻게 넣어?",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_commands"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_commands",
+        "npc_name": "§5가스트2",
+        "text": "흑... 나 안에도 명령어가 있어.\n\n월드빌더로 NPC를 클릭하면\n편집창이 열려.\n거기에 §6명령어를 입력§r하면\n\n플레이어가 대화할 때\n§1자동으로 실행§r되는 거야.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_intro"]
+          },
+          {
+            "name": "스토리텔링은?",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_story"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_story",
+        "npc_name": "§5가스트2",
+        "text": "지금 네가 경험하는 게\n바로 §1NPC 스토리텔링§r이야.\n\n대사, 선택지, 명령어.\n이 세 가지로\n§6이야기를 만들어낼 수 있어.§r\n\n나처럼 말이야. 흑...",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_quiz",
+        "npc_name": "§5가스트2",
+        "text": "흑... 테스트야.\n\nNPC를 소환하고 편집하려면\n어떤 권한이 필요해?",
+        "buttons": [
+          {
+            "name": "일반 플레이어 권한",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_wrong"]
+          },
+          {
+            "name": "월드빌더 권한",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_correct"]
+          },
+          {
+            "name": "크리에이티브 모드",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_correct",
+        "npc_name": "§5가스트2",
+        "text": "맞아. 흑...\n\n§1월드빌더 권한§r이야.\n운영자 상태에서 §6/wb§r 입력.\n\n그러면 NPC를 클릭해서\n이름, 대사, 명령어를\n§2직접 편집§r할 수 있어.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_wrong",
+        "npc_name": "§5가스트2",
+        "text": "흑... 틀렸어.\n\n§c일반 권한이나 크리에이티브§r로는\nNPC를 편집할 수 없어.\n\n§1월드빌더 권한§r이 필요해.\n운영자 상태에서 §6/wb§r 명령어.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_permission"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트2,r=10] @initiator ghast2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast2_bye",
+        "npc_name": "§5가스트2",
+        "text": "흑...\n나는 그냥 NPC야.\n\n하지만 너도 이제\n§1NPC를 만들 수 있어.§r\n\n네 이야기를 만들어봐.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
