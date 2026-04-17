@@ -1,0 +1,187 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "ghast1_intro",
+        "npc_name": "§5가스트1",
+        "text": "흑... 여기까지 왔군.\n\n이곳은 §1미노타우루스의 미로§r.\n그냥 달리면 절대 못 나가.\n\n여기엔 §6수학§r이 숨어 있어.\n§1배수§r를 알아야 탈출할 수 있지.",
+        "buttons": [
+          {
+            "name": "왜 수학이 필요해?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_why"]
+          },
+          {
+            "name": "미노타우루스가 뭐야?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_story"]
+          },
+          {
+            "name": "미로는 어떻게 풀어?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_why",
+        "npc_name": "§5가스트1",
+        "text": "흑... 좋은 맵은 말이야.\n\n그냥 뛰고 끝나면 안 돼.\n§6배운 게 남아야§r 진짜 맵이야.\n\n이 미로는 §1배수§r를 모르면\n길을 찾을 수 없어.\n탈출하면서 수학을 배우는 거지.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
+          },
+          {
+            "name": "미로는 어떻게 풀어?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_story",
+        "npc_name": "§5가스트1",
+        "text": "흑... 옛날 그리스 신화야.\n\n크레타 섬 미로 안에\n§c미노타우루스§r가 갇혀 있었어.\n소의 머리, 인간의 몸.\n\n영웅 §6테세우스§r가\n그 괴물을 물리치고 탈출했지.\n이 맵이 바로 그 이야기야.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
+          },
+          {
+            "name": "미로는 어떻게 풀어?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_how",
+        "npc_name": "§5가스트1",
+        "text": "입구가 §14군데§r야.\n각 입구에 숫자가 있어.\n\n하나를 골라 들어가.\n갈림길에서는\n§6그 숫자의 배수§r인 길을 선택해.\n\n배수를 따라가면\n§c미노타우루스§r가 있는 곳에 도착해.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
+          },
+          {
+            "name": "배수가 뭐야?",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_multiples"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_multiples",
+        "npc_name": "§5가스트1",
+        "text": "배수는...\n어떤 수의 §1정수배§r가 되는 수야.\n\n3의 배수 → §63, 6, 9, 12...§r\n4의 배수 → §64, 8, 12, 16...§r\n\n갈림길 숫자가\n내가 고른 수로 나누어지면\n그 길이 정답이야.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_how"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_quiz",
+        "npc_name": "§5가스트1",
+        "text": "흑... 테스트할게.\n\n입구에서 §13§r을 골랐어.\n갈림길에 §66번, 7번, 11번§r 길이 있어.\n\n어느 길로 가야 해?",
+        "buttons": [
+          {
+            "name": "6번 길",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_correct"]
+          },
+          {
+            "name": "7번 길",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_wrong"]
+          },
+          {
+            "name": "11번 길",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_correct",
+        "npc_name": "§5가스트1",
+        "text": "맞아! 흑...\n\n§16번§r은 3x2.\n§23의 배수§r니까 정답이야.\n\n7과 11은 3으로 나누어지지 않아.\n이 원리로 미로를 풀어나가는 거야.\n\n테세우스가 될 수 있어.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_wrong",
+        "npc_name": "§5가스트1",
+        "text": "흑... 틀렸어.\n\n3을 골랐으면\n§13으로 나누어지는 수§r를 찾아야 해.\n\n6 = 3x2 → §2정답§r\n7, 11 → §c3의 배수 아님§r\n\n배수를 다시 확인해봐.",
+        "buttons": [
+          {
+            "name": "← 배수 다시 보기",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_multiples"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=가스트1,r=10] @initiator ghast1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "ghast1_bye",
+        "npc_name": "§5가스트1",
+        "text": "흑...\n배수를 기억해.\n\n미로 안에서 길을 잃으면\n숫자를 봐.\n\n§c미노타우루스§r를 쓰러뜨려.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
