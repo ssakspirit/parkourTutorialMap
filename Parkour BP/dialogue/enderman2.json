@@ -17,11 +17,11 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bed"]
           },
           {
-            "name": "퀴즈 도전! 🧩",
+            "name": "퀴즈 도전!",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_quiz"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
@@ -41,7 +41,7 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bed"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
@@ -57,11 +57,11 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_intro"]
           },
           {
-            "name": "퀴즈 도전! 🧩",
+            "name": "퀴즈 도전!",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_quiz"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
@@ -85,7 +85,7 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_wrong"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
@@ -101,7 +101,7 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_intro"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
@@ -121,7 +121,7 @@
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_quiz"]
           },
           {
-            "name": "그럼 이만. 👋",
+            "name": "그럼 이만.",
             "commands": ["/dialogue open @e[name=엔더맨2,r=10] @initiator enderman2_bye"]
           }
         ]
