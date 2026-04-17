@@ -10,15 +10,15 @@
         "buttons": [
           {
             "name": "파쿠르가 뭐야?",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_what"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_what"]
           },
           {
             "name": "어떤 블록을 써?",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_blocks"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_blocks"]
           },
           {
             "name": "퀴즈 도전! 🧩",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_quiz"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_quiz"]
           }
         ]
       },
@@ -30,11 +30,11 @@
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_intro"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_intro"]
           },
           {
             "name": "블록 얘기 해줘",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_blocks"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_blocks"]
           }
         ]
       },
@@ -46,11 +46,11 @@
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_intro"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_intro"]
           },
           {
             "name": "퀴즈 도전! 🧩",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_quiz"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_quiz"]
           }
         ]
       },
@@ -62,11 +62,11 @@
         "buttons": [
           {
             "name": "응, 올라갈 수 있어",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_wrong"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_wrong"]
           },
           {
             "name": "아니, 못 올라가",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_correct"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_correct"]
           }
         ]
       },
@@ -78,7 +78,7 @@
         "buttons": [
           {
             "name": "✓ 알겠어!",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_intro"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_intro"]
           }
         ]
       },
@@ -90,11 +90,11 @@
         "buttons": [
           {
             "name": "← 블록 다시 보기",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_blocks"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_blocks"]
           },
           {
             "name": "퀴즈 다시!",
-            "commands": ["/dialogue open @e[type=npc,name=\"엔더맨1\",r=10] @s enderman1_quiz"]
+            "commands": ["/dialogue open @e[type=npc,name=엔더맨1,r=10] @s enderman1_quiz"]
           }
         ]
       }
