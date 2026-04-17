@@ -19,6 +19,10 @@
           {
             "name": "퀴즈 도전! 🧩",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_quiz"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
       },
@@ -26,7 +30,7 @@
       {
         "scene_tag": "enderman1_what",
         "npc_name": "§8엔더맨1",
-        "text": "파쿠르...\n장애물을 §e점프§r로 넘으며\n목표 지점까지 오르는 거야.\n\n나처럼 순간이동은 안 돼.\n너는 §c발로 뛰어야§r 해.",
+        "text": "파쿠르...\n장애물을 §b점프§r로 넘으며\n목표 지점까지 오르는 거야.\n\n나처럼 순간이동은 안 돼.\n너는 §c발로 뛰어야§r 해.",
         "buttons": [
           {
             "name": "← 돌아가기",
@@ -35,6 +39,10 @@
           {
             "name": "블록 얘기 해줘",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_blocks"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
       },
@@ -42,7 +50,7 @@
       {
         "scene_tag": "enderman1_blocks",
         "npc_name": "§8엔더맨1",
-        "text": "블록마다 §e충돌 높이§r가 달라.\n\n§7카펫§r    → 거의 0\n§7반 블록§r  → 0.5칸\n§7일반 블록§r → 1칸\n§c울타리§r   → 1.5칸 ← 주의!\n\n이 차이가... 생사를 가른다.",
+        "text": "블록마다 §b충돌 높이§r가 달라.\n\n§8카펫§r    → 거의 0\n§8반 블록§r  → 0.5칸\n§8일반 블록§r → 1칸\n§c울타리§r   → 1.5칸 ← 주의!\n\n이 차이가... 생사를 가른다.",
         "buttons": [
           {
             "name": "← 돌아가기",
@@ -51,6 +59,10 @@
           {
             "name": "퀴즈 도전! 🧩",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_quiz"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
       },
@@ -58,7 +70,7 @@
       {
         "scene_tag": "enderman1_quiz",
         "npc_name": "§8엔더맨1",
-        "text": "...테스트해 보지.\n\n§e울타리§r 블록 위로\n점프해서 올라갈 수 있어?",
+        "text": "...테스트해 보지.\n\n§b울타리§r 블록 위로\n점프해서 올라갈 수 있어?",
         "buttons": [
           {
             "name": "응, 올라갈 수 있어",
@@ -67,6 +79,10 @@
           {
             "name": "아니, 못 올라가",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_correct"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
       },
@@ -74,11 +90,15 @@
       {
         "scene_tag": "enderman1_correct",
         "npc_name": "§8엔더맨1",
-        "text": "...맞아.\n\n울타리는 §c1.5칸§r 높이라\n점프로는 올라가지 못해.\n\n파쿠르 맵 설계할 때\n§e막힌 구간§r으로 쓸 수 있지.\n기억해 둬.",
+        "text": "...맞아.\n\n울타리는 §c1.5칸§r 높이라\n점프로는 올라가지 못해.\n\n파쿠르 맵 설계할 때\n§6막힌 구간§r으로 쓸 수 있지.\n기억해 둬.",
         "buttons": [
           {
             "name": "✓ 알겠어!",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_intro"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
       },
@@ -86,7 +106,7 @@
       {
         "scene_tag": "enderman1_wrong",
         "npc_name": "§8엔더맨1",
-        "text": "...틀렸어.\n\n울타리는 §c1.5칸§r.\n일반 점프로는 넘을 수 없어.\n\n§7설계할 때 실수하면\n플레이어가 막혀버려.§r\n다시 생각해 봐.",
+        "text": "...틀렸어.\n\n울타리는 §c1.5칸§r.\n일반 점프로는 넘을 수 없어.\n\n§8설계할 때 실수하면\n플레이어가 막혀버려.§r\n다시 생각해 봐.",
         "buttons": [
           {
             "name": "← 블록 다시 보기",
@@ -95,8 +115,19 @@
           {
             "name": "퀴즈 다시!",
             "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_quiz"]
+          },
+          {
+            "name": "그럼 이만. 👋",
+            "commands": ["/dialogue open @e[name=엔더맨1,r=10] @initiator enderman1_bye"]
           }
         ]
+      },
+
+      {
+        "scene_tag": "enderman1_bye",
+        "npc_name": "§8엔더맨1",
+        "text": "...눈 마주치지 마.\n\n그리고... 잘 가.",
+        "buttons": []
       }
 
     ]
