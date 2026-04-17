@@ -1,0 +1,139 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "enderman3_intro",
+        "npc_name": "§8엔더맨3",
+        "text": "...길이 하나뿐이면 재미없어.\n\n좋은 파쿠르는\n§1여러 갈래 길§r을 만들어.\n플레이어가 §2스스로 선택§r하게.\n\n왼쪽 길... 조심해야 해.",
+        "buttons": [
+          {
+            "name": "왜 여러 길이 필요해?",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_diversity"]
+          },
+          {
+            "name": "왼쪽 길이 왜?",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_dripleaf"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_diversity",
+        "npc_name": "§8엔더맨3",
+        "text": "길이 하나면... 막히면 끝이야.\n\n§1여러 길§r을 만들면\n실력에 따라 고를 수 있어.\n\n§2쉬운 길§r, §c어려운 길§r.\n둘 다 있어야 모두가 즐겨.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_intro"]
+          },
+          {
+            "name": "왼쪽 길이 왜?",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_dripleaf"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_dripleaf",
+        "npc_name": "§8엔더맨3",
+        "text": "저건 §1드립리프§r야.\n\n위에 서있으면...\n잠시 후 §c잎이 접혀§r.\n그리고 떨어지지.\n\n빠르게 건너야 살아남아.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_quiz",
+        "npc_name": "§8엔더맨3",
+        "text": "...확인해 보지.\n\n§1드립리프§r 위에\n오래 서있으면 어떻게 돼?",
+        "buttons": [
+          {
+            "name": "잎이 접혀서 떨어진다",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_correct"]
+          },
+          {
+            "name": "잎이 더 커진다",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_wrong"]
+          },
+          {
+            "name": "아무 일도 없다",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_correct",
+        "npc_name": "§8엔더맨3",
+        "text": "...맞아.\n\n§1드립리프§r는 시간이 지나면\n§c잎이 접혀§r서 플레이어를 떨어뜨려.\n\n파쿠르 맵에서\n§6긴장감§r을 줄 때 쓰기 좋아.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_wrong",
+        "npc_name": "§8엔더맨3",
+        "text": "...틀렸어.\n\n§1드립리프§r는 시간이 지나면\n§c잎이 접혀§r.\n그냥 떨어지는 거야.\n\n서있지 말고 빠르게 건너.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_dripleaf"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨3,r=10] @initiator enderman3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman3_bye",
+        "npc_name": "§8엔더맨3",
+        "text": "...왼쪽 길 도전해 봐.\n\n떨어져도 내 탓 아니야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
