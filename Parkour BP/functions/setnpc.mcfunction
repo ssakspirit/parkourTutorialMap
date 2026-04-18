@@ -15,3 +15,5 @@ dialogue change @e[name=엔더맨6] enderman6_intro
 dialogue change @e[name=가스트1] ghast1_intro
 dialogue change @e[name=가스트2] ghast2_intro
 # dialogue change @e[name=가스트3] ghast3_intro
+
+dialogue change @e[name=좀비1] zombie1_intro
