@@ -5,7 +5,7 @@
       {
         "scene_tag": "stevecoding3_intro",
         "npc_name": "§5스티브코딩",
-        "text": "마지막이에요.\n\n§1안내판 배치§r와\n§5치트 방지§r.\n\n맵을 제출하기 전에\n이 두 가지는 반드시 확인하세요.",
+        "text": "마지막이에요.\n\n§1안내판 배치§r,\n§5치트 방지§r, 그리고\n§2출처 표시§r.\n\n맵을 제출하기 전에\n세 가지를 반드시 확인하세요.",
         "buttons": [
           {
             "name": "안내판에 뭘 써야 해요?",
@@ -17,6 +17,12 @@
             "name": "치트 방지는 어떻게 해요?",
             "commands": [
               "/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_cheat"
+            ]
+          },
+          {
+            "name": "출처 표시가 뭐예요?",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_source"
             ]
           },
           {
@@ -56,6 +62,31 @@
         "scene_tag": "stevecoding3_cheat",
         "npc_name": "§5스티브코딩",
         "text": "§1규칙 7 — 치트 방지§r\n\n맵 범위(§564×64§r) 밖으로\n나가거나, 날기·텔레포트로\n우회하는 구조는 §c차단§r해야 해요.\n\n경계엔 §8용암, 벽, 울타리§r를 추천해요.\n\n블록 파괴·설치를 막으려면\n§1모험 모드§r 또는\n§5게임변경불가§r 설정을 켜세요.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_intro"
+            ]
+          },
+          {
+            "name": "안내판에 뭘 써야 해요?",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_sign"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "stevecoding3_source",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 8 — 출처 표시§r\n\n기존 건축물이나 템플릿을\n사용해도 괜찮아요.\n\n단, 안내판에 반드시\n§5원본 출처§r를 적고\n§2어떻게 활용했는지§r도\n함께 표시해야 해요.",
         "buttons": [
           {
             "name": "← 돌아가기",
