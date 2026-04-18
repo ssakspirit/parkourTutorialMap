@@ -1,0 +1,75 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "stevecoding3_intro",
+        "npc_name": "§6스티브코딩",
+        "text": "마지막이야.\n\n§1안내판 배치§r와\n§6치트 방지§r.\n\n맵을 제출하기 전에\n이 두 가지는 반드시 확인해.",
+        "buttons": [
+          {
+            "name": "안내판에 뭘 써야 해?",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_sign"]
+          },
+          {
+            "name": "치트 방지는 어떻게 해?",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_cheat"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding3_sign",
+        "npc_name": "§6스티브코딩",
+        "text": "§1규칙 6 — 안내판 필수 배치§r\n\n스타트 지점에 팻말 또는 NPC로\n다음 내용을 담아야 해.\n\n· §6맵 이름§r\n· §6제작자 이름§r\n· §6플레이 모드§r (협동 / 경쟁)\n· §6권장 인원§r\n· §6조작법 또는 목표§r",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_intro"]
+          },
+          {
+            "name": "치트 방지는 어떻게 해?",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_cheat"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding3_cheat",
+        "npc_name": "§6스티브코딩",
+        "text": "§1규칙 7 — 치트 방지§r\n\n맵 범위(§664×64§r) 밖으로\n나가거나, 날기·텔레포트로\n우회하는 구조는 §c차단§r해야 해.\n\n경계엔 §8용암, 벽, 울타리§r를 추천해.\n\n블록 파괴·설치를 막으려면\n§1모험 모드§r 또는\n§6게임변경불가§r 설정을 켜.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_intro"]
+          },
+          {
+            "name": "안내판에 뭘 써야 해?",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_sign"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=스티브코딩3,r=10] @initiator stevecoding3_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding3_bye",
+        "npc_name": "§6스티브코딩",
+        "text": "규칙은 여기까지야.\n\n이제 직접 체험할 시간이야.\n\n§1파쿠르 구역§r으로 가봐.\n§6엔더맨§r이 안내해줄 거야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
