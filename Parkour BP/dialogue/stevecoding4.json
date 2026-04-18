@@ -1,0 +1,80 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "stevecoding4_intro",
+        "npc_name": "§5스티브코딩",
+        "text": "수고했어.\n\n9개의 방을 전부 탈출했어.\n§1정말 잘했다.§r\n\n이 맵이 보여준 것들.\n이제 네가 만들 차례야.",
+        "buttons": [
+          {
+            "name": "좋은 작품 부탁해.",
+            "commands": ["/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_hope"]
+          },
+          {
+            "name": "더 배우고 싶어.",
+            "commands": ["/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_youtube"]
+          },
+          {
+            "name": "크리에이티브 모드로 전환",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_bye",
+              "/gamemode creative @initiator"
+            ]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding4_hope",
+        "npc_name": "§5스티브코딩",
+        "text": "이 튜토리얼을 끝냈다면\n뭔가 얻어간 게 있을 거야.\n\n§1파쿠르§r, §5미로§r, §2방탈출§r.\n이 세 가지를 직접 경험했잖아.\n\n이제 그 경험으로\n§1네 맵을 만들어봐.§r\n좋은 작품을 기대할게.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_intro"]
+          },
+          {
+            "name": "더 배우고 싶어.",
+            "commands": ["/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_youtube"]
+          },
+          {
+            "name": "크리에이티브 모드로 전환",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_bye",
+              "/gamemode creative @initiator"
+            ]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding4_youtube",
+        "npc_name": "§5스티브코딩",
+        "text": "궁금한 게 생기면\n§1유튜브§r에서 찾아봐.\n\n§5스티브코딩§r 채널이야.\n\nyoutube.com/\n§2@stevecoding§r\n\n맵 제작 관련 내용을\n계속 올리고 있어.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_intro"]
+          },
+          {
+            "name": "크리에이티브 모드로 전환",
+            "commands": [
+              "/dialogue open @e[name=스티브코딩4,r=10] @initiator stevecoding4_bye",
+              "/gamemode creative @initiator"
+            ]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "stevecoding4_bye",
+        "npc_name": "§5스티브코딩",
+        "text": "크리에이티브 모드야.\n\n이제 이 맵을 §1자유롭게§r 둘러봐.\n어떻게 만들었는지\n직접 확인해봐도 좋아.\n\n§5좋은 맵 만들어. 화이팅.§r",
+        "buttons": []
+      }
+
+    ]
+  }
+}

@@ -8,6 +8,7 @@
 dialogue change @e[name=스티브코딩1] stevecoding1_intro
 dialogue change @e[name=스티브코딩2] stevecoding2_intro
 dialogue change @e[name=스티브코딩3] stevecoding3_intro
+dialogue change @e[name=스티브코딩4] stevecoding4_intro
 
 dialogue change @e[name=엔더맨1] enderman1_intro
 dialogue change @e[name=엔더맨2] enderman2_intro
