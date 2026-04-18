@@ -19,3 +19,4 @@ dialogue change @e[name=가스트2] ghast2_intro
 dialogue change @e[name=좀비1] zombie1_intro
 dialogue change @e[name=좀비2] zombie2_intro
 dialogue change @e[name=좀비3] zombie3_intro
+dialogue change @e[name=좀비4] zombie4_intro
