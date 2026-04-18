@@ -1,0 +1,139 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "enderman4_intro",
+        "npc_name": "§8엔더맨4",
+        "text": "...여기선 발로 뛰는 게 아니야.\n\n§1피스톤§r이 §6슬라임 블록§r을 밀면\n넌 하늘로 날아가.\n\n옆에 §2버튼§r이 보여?",
+        "buttons": [
+          {
+            "name": "어떻게 작동해?",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_how"]
+          },
+          {
+            "name": "공중에서 어떻게 해?",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_air"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_how",
+        "npc_name": "§8엔더맨4",
+        "text": "순서가 있어.\n\n1. §6슬라임 블록§r 위에 올라서.\n2. 옆에 있는 §2버튼§r을 눌러.\n3. §1피스톤§r이 슬라임을 밀면\n   넌 위로 날아가.\n\n순서 틀리면 그냥 바닥이야.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_intro"]
+          },
+          {
+            "name": "공중에서 어떻게 해?",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_air"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_air",
+        "npc_name": "§8엔더맨4",
+        "text": "날아가는 순간이 중요해.\n\n공중에서 §2원하는 방향§r으로\n이동하면 돼.\n\n방향키만 잘 눌러도\n§1높은 곳§r까지 올라갈 수 있어.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_quiz",
+        "npc_name": "§8엔더맨4",
+        "text": "...맞춰봐.\n\n점프대를 쓸 때\n제일 먼저 해야 할 것은?",
+        "buttons": [
+          {
+            "name": "버튼부터 누른다",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_wrong"]
+          },
+          {
+            "name": "슬라임 블록 위에 선다",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_correct"]
+          },
+          {
+            "name": "공중에서 방향키를 누른다",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_correct",
+        "npc_name": "§8엔더맨4",
+        "text": "...맞아.\n\n§6슬라임 블록§r 위에 먼저 서고\n그 다음 §2버튼§r을 눌러야 해.\n\n순서가 틀리면\n혼자 날아가고 넌 그대로야.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_wrong",
+        "npc_name": "§8엔더맨4",
+        "text": "...틀렸어.\n\n§6슬라임 블록§r 위에 §c먼저 서야 해.§r\n그 다음에 §2버튼§r이야.\n\n순서가 바뀌면\n슬라임만 날아가.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_how"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨4,r=10] @initiator enderman4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman4_bye",
+        "npc_name": "§8엔더맨4",
+        "text": "...슬라임 위에 서.\n그리고 버튼 눌러.\n\n나머지는 네 몸이 알아서 해.",
+        "buttons": []
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "zombie2_intro",
+        "npc_name": "§2좀비2",
+        "text": "으으... 잠깐.\n\n이 방에서\n§6블록을 부숴봤어?§r\n\n이 월드는 원래\n블록을 부수거나\n설치할 수 없어. 으으.",
+        "buttons": [
+          {
+            "name": "왜 블록을 못 부숴?",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_immutable"]
+          },
+          {
+            "name": "그런데 부술 수 있다고?",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_allow"]
+          },
+          {
+            "name": "허용블록은 어떻게 써?",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_wb"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_immutable",
+        "npc_name": "§2좀비2",
+        "text": "으으... 월드 설정 때문이야.\n\n§6변경 불가 세계§r 옵션.\n이걸 켜두면\n플레이어가 블록을\n§1부수거나 설치할 수 없어.§r\n\n맵 제작자가 의도한\n구조를 보호하는 거야.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_intro"]
+          },
+          {
+            "name": "그런데 부술 수 있다고?",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_allow"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_allow",
+        "npc_name": "§2좀비2",
+        "text": "으으... 예외가 있어.\n\n§6허용블록§r이야.\n허용블록 §1위에 올려진 블록§r은\n변경 불가 세계에서도\n부술 수 있어.\n\n왼쪽 §2잔디블록§r을\n지금 부숴봐. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_intro"]
+          },
+          {
+            "name": "허용블록은 어떻게 써?",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_wb"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_wb",
+        "npc_name": "§2좀비2",
+        "text": "으으... 허용블록은\n아무나 쓸 수 없어.\n\n§1월드빌더 권한§r이 있어야 해.\n운영자 상태에서 §6/wb§r 입력.\n\n그러면 허용블록을 인벤토리에서\n꺼내 §2원하는 위치에 설치§r할 수 있어.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_quiz",
+        "npc_name": "§2좀비2",
+        "text": "으으... 테스트.\n\n변경 불가 세계에서\n특정 블록을 부술 수 있는\n이유는 뭐야?",
+        "buttons": [
+          {
+            "name": "운영자 권한이 있어서",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_wrong"]
+          },
+          {
+            "name": "허용블록 위에 올려져 있어서",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_correct"]
+          },
+          {
+            "name": "크리에이티브 모드라서",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_correct",
+        "npc_name": "§2좀비2",
+        "text": "으으... 맞아.\n\n§6허용블록 위§r에 있는 블록만\n부술 수 있어.\n\n허용블록은 §1월드빌더 권한§r으로\n설치할 수 있고,\n맵 제작자가 §2원하는 곳§r에만\n블록 파괴를 허용하는 거야.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_wrong",
+        "npc_name": "§2좀비2",
+        "text": "으... 틀렸어.\n\n§c운영자나 크리에이티브§r로는\n변경 불가 세계에서\n블록을 부술 수 없어.\n\n§6허용블록 위§r에 있어야만\n부술 수 있는 거야. 으으.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_allow"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비2,r=10] @initiator zombie2_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie2_bye",
+        "npc_name": "§2좀비2",
+        "text": "으으...\n왼쪽 잔디블록을\n부숴봐.\n\n§6허용블록§r 위에 있으니까\n부술 수 있어.\n\n그게 이 방의 탈출 방법이야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}

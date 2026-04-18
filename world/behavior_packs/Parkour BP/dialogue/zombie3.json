@@ -1,0 +1,166 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "zombie3_intro",
+        "npc_name": "§2좀비3",
+        "text": "으으... 들어봐.\n\nNPC는 §6대화만 하는 게§r 아니야.\n버튼에 §1명령어를 넣으면§r\n퀴즈처럼 만들 수 있어.\n\n정답이냐 오답이냐에 따라\n§c다른 일§r이 일어나게 돼. 으으.",
+        "buttons": [
+          {
+            "name": "버튼에 명령어를?",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_command"
+            ]
+          },
+          {
+            "name": "난이도는 어떻게 잡아?",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_difficulty"
+            ]
+          },
+          {
+            "name": "직접 풀어볼게.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_quiz"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_command",
+        "npc_name": "§2좀비3",
+        "text": "으으... 버튼마다\n§6명령어가 다르게 실행돼.§r\n\n§1정답 버튼§r → 블록 소환 명령어\n§c오답 버튼§r → 스켈레톤 소환 명령어\n\n물론 §8아무 일도 없게§r 할 수도 있어.\n설계는 제작자 마음이야. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_intro"
+            ]
+          },
+          {
+            "name": "난이도는 어떻게 잡아?",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_difficulty"
+            ]
+          },
+          {
+            "name": "직접 풀어볼게.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_quiz"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_difficulty",
+        "npc_name": "§2좀비3",
+        "text": "으으... 중요한 거야.\n\n§c너무 어려우면§r 좌절하고\n맵을 떠나버려.\n§8너무 쉬우면§r 재미가 없어.\n\n오답에 §1작은 패널티§r를 줘서\n도전감은 살리되\n§6재시도할 수 있게§r 해야 해.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_intro"
+            ]
+          },
+          {
+            "name": "직접 풀어볼게.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_quiz"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_quiz",
+        "npc_name": "§2좀비3",
+        "text": "으으... 문제야.\n\n플레이어가 §6좌절하지 않는§r\n퀴즈 맵 설계의 핵심은?",
+        "buttons": [
+          {
+            "name": "오답 패널티를 없앤다",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_wrong",
+              "/summon skeleton ~ ~1 ~3"
+            ]
+          },
+          {
+            "name": "도전감 있되 재시도 가능하게",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_correct",
+              "/setblock ~3 ~0 ~0 minecraft:stone"
+            ]
+          },
+          {
+            "name": "문제를 최대한 어렵게 만든다",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_wrong",
+              "/summon skeleton ~ ~1 ~3"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_correct",
+        "npc_name": "§2좀비3",
+        "text": "으으... 맞아.\n\n§1도전감§r과 §6재시도§r.\n둘 다 있어야 해.\n\\n§c이제 옆에 있는 스님과 대화해.§r\n서둘러 이동해. 으으.",
+        "buttons": [
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_wrong",
+        "npc_name": "§2좀비3",
+        "text": "으... 틀렸어.\n\n§c스켈레톤이 왔어.§r\n처리하고 다시 도전해.\n\n패널티가 너무 크면 안 되지만\n§1작은 도전§r은 긴장감을 줘.\n\n다시 풀어볼 수 있어. 으으.",
+        "buttons": [
+          {
+            "name": "퀴즈 다시!",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_quiz"
+            ]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": [
+              "/dialogue open @e[name=좀비3,r=10] @initiator zombie3_bye"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "zombie3_bye",
+        "npc_name": "§2좀비3",
+        "text": "으으...\n\n버튼에 명령어를 넣으면\n§6NPC가 퀴즈가 돼.§r\n\n정답엔 보상,\n오답엔 §1작은 도전§r.\n\n그게 이 방의 방식이야.",
+        "buttons": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "enderman5_intro",
+        "npc_name": "§8엔더맨5",
+        "text": "...발 디딜 곳이 좁아질수록\n파쿠르는 어려워져.\n\n§1블록의 크기§r가\n난이도를 결정하거든.\n\n팁도 하나 있어. 들을래?",
+        "buttons": [
+          {
+            "name": "블록 크기가 왜 중요해?",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_size"]
+          },
+          {
+            "name": "작은 블록이 뭐가 있어?",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_small"]
+          },
+          {
+            "name": "팁 알려줘.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_tip"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_size",
+        "npc_name": "§8엔더맨5",
+        "text": "착지 지점이 §2크면§r 쉬워.\n여유가 있으니까.\n\n하지만 §c작을수록§r\n정확하게 착지해야 해.\n\n크기 하나로 난이도가\n완전히 달라지지.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_intro"]
+          },
+          {
+            "name": "작은 블록이 뭐가 있어?",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_small"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_small",
+        "npc_name": "§8엔더맨5",
+        "text": "이런 게 있어.\n\n§c엔더막대§r  - 가장 얇음\n§c판유리§r    - 얇고 미끄러움\n§c피뢰침§r   - 끝이 뾰족함\n\n전부 밟기 힘들어.\n...나도 가끔 떨어져.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_intro"]
+          },
+          {
+            "name": "팁 알려줘.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_tip"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_tip",
+        "npc_name": "§8엔더맨5",
+        "text": "...알려줄게.\n\n좁은 블록 위에서는\n§1웅크린 채로§r 움직여봐.\n\n가장자리에 가도\n§2떨어지지 않아.§r\n\nShift 키야. 기억해.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_quiz",
+        "npc_name": "§8엔더맨5",
+        "text": "...테스트야.\n\n좁은 블록 가장자리에서\n떨어지지 않으려면?",
+        "buttons": [
+          {
+            "name": "빠르게 달린다",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_wrong"]
+          },
+          {
+            "name": "웅크린 채로 움직인다",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_correct"]
+          },
+          {
+            "name": "점프를 계속 한다",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_correct",
+        "npc_name": "§8엔더맨5",
+        "text": "...맞아.\n\n§1웅크리면§r 가장자리에서\n§2떨어지지 않아.§r\n\n좁은 블록, 엔더막대, 피뢰침...\n전부 이 방법으로 버텨.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_wrong",
+        "npc_name": "§8엔더맨5",
+        "text": "...틀렸어.\n\n달리거나 점프하면\n§c더 빨리 떨어져.§r\n\n§1웅크린 채§r로 천천히 움직여.\nShift 키. 그게 정답이야.",
+        "buttons": [
+          {
+            "name": "← 팁 다시 보기",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_tip"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=엔더맨5,r=10] @initiator enderman5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman5_bye",
+        "npc_name": "§8엔더맨5",
+        "text": "...Shift 키 잊지 마.\n\n좁은 길에서\n그게 전부야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}

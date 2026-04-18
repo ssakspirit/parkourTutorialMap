@@ -1,0 +1,167 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "zombie4_intro",
+        "npc_name": "§2좀비4",
+        "text": "으으... 알아둬.\n\nNPC만 명령어를 쓰는 게 아니야.\n§6커맨드블록§r이 있어.\n\n블록 자체에 명령어를 넣고\n§1레드스톤 신호§r로 실행시키는 거야.\n\n맵 제작의 핵심 도구야. 으으.",
+        "buttons": [
+          {
+            "name": "어떻게 얻어?",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_get"]
+          },
+          {
+            "name": "명령어는 어떻게 넣어?",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_use"]
+          },
+          {
+            "name": "레드스톤이 뭐야?",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_redstone"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_get",
+        "npc_name": "§2좀비4",
+        "text": "으으... 두 가지가 필요해.\n\n§1운영자 권한§r과\n§6크리에이티브 모드.§r\n\n둘 다 갖추면\n명령어로 얻을 수 있어.\n\n§2/give @s command_block§r\n\n일반 모드에선 쓸 수 없어. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_intro"]
+          },
+          {
+            "name": "명령어는 어떻게 넣어?",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_use"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_use",
+        "npc_name": "§2좀비4",
+        "text": "으으... 설치하고 나서.\n\n커맨드블록을\n§6마우스 우클릭§r 해봐.\n\n명령어 입력창이 열려.\n거기에 원하는 §1명령어를 입력§r하면\n\n레드스톤 신호가 올 때마다\n§2자동으로 실행§r돼. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_intro"]
+          },
+          {
+            "name": "레드스톤이 뭐야?",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_redstone"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_redstone",
+        "npc_name": "§2좀비4",
+        "text": "으으... 커맨드블록은\n혼자 실행되지 않아.\n\n§6레드스톤 신호§r가 있어야 해.\n\n버튼, 레버, 압력판 같은 걸\n커맨드블록 옆에 붙이면\n신호를 보낼 수 있어.\n\n§1버튼 누르면§r 명령어 실행. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_quiz",
+        "npc_name": "§2좀비4",
+        "text": "으으... 테스트.\n\n커맨드블록에 넣은 명령어를\n실행시키려면 뭐가 필요해?",
+        "buttons": [
+          {
+            "name": "마우스 우클릭",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_wrong"]
+          },
+          {
+            "name": "레드스톤 신호",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_correct"]
+          },
+          {
+            "name": "운영자 권한",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_correct",
+        "npc_name": "§2좀비4",
+        "text": "으으... 맞아.\n\n§6레드스톤 신호§r야.\n\n버튼이나 레버를 옆에 붙여서\n신호를 보내면\n§1명령어가 실행§r되는 거야.\n\n우클릭은 명령어 §8입력§r할 때고\n실행은 §2신호§r가 하는 거야.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_wrong",
+        "npc_name": "§2좀비4",
+        "text": "으... 틀렸어.\n\n§c우클릭§r은 명령어를 입력하는 거고\n§c운영자 권한§r은 얻기 위한 조건이야.\n\n실행은 §6레드스톤 신호§r가 해.\n버튼을 누르면 신호가 전달되고\n§1명령어가 실행§r되는 거야. 으으.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_redstone"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비4,r=10] @initiator zombie4_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie4_bye",
+        "npc_name": "§2좀비4",
+        "text": "으으...\n\n§6커맨드블록§r 기억해.\n\n얻기: §2/give @s command_block§r\n입력: §1우클릭§r\n실행: §6레드스톤 신호§r\n\n이 세 가지야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}

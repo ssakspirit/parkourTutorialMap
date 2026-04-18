@@ -1,0 +1,167 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "zombie1_intro",
+        "npc_name": "§2좀비1",
+        "text": "으으... 여기 왔군.\n\n이곳은 §6황룡사 9층 목탑§r.\n신라 시대의 탑을 모티브로\n만든 맵이야.\n\n9개의 방을...\n전부 탈출해야 해. 으으.",
+        "buttons": [
+          {
+            "name": "방탈출이 뭐야?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_escape"]
+          },
+          {
+            "name": "황룡사가 뭐야?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_hwangnyong"]
+          },
+          {
+            "name": "방마다 뭐가 달라?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_variety"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_escape",
+        "npc_name": "§2좀비1",
+        "text": "으... 방탈출은 말이야.\n\n§1각 방에 갇혀서§r\n주어진 방법으로 탈출하는 거야.\n\n방마다 §6다른 방식§r이라\n계속 새로운 도전을 하게 돼.\n\n맵 설계하기도 딱 좋아. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_intro"]
+          },
+          {
+            "name": "황룡사가 뭐야?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_hwangnyong"]
+          },
+          {
+            "name": "방마다 뭐가 달라?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_variety"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_hwangnyong",
+        "npc_name": "§2좀비1",
+        "text": "으으... 황룡사.\n\n신라 시대에 지어진\n§6우리나라 최대 목탑§r이야.\n9층 높이. 64미터.\n\n몽골 침입 때 불타서 없어졌지.\n이 맵은 그 탑을 §1다시 세운 거야.§r",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_intro"]
+          },
+          {
+            "name": "방마다 뭐가 달라?",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_variety"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_variety",
+        "npc_name": "§2좀비1",
+        "text": "9개 방이 전부 달라. 으으.\n\n§1파쿠르§r, §6퍼즐§r, §c미로§r...\n각 방마다 다른 방법으로\n탈출해야 해.\n\n한 가지 방법만 쓰는 맵보다\n§1훨씬 다양하게§r 만들 수 있어.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_quiz",
+        "npc_name": "§2좀비1",
+        "text": "으으... 테스트.\n\n방탈출 형식 맵의\n가장 큰 장점은 뭐야?",
+        "buttons": [
+          {
+            "name": "한 방법으로 빠르게 클리어",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_wrong"]
+          },
+          {
+            "name": "방마다 다른 방법으로 탈출",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_correct"]
+          },
+          {
+            "name": "맵이 단순해서 만들기 쉽다",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_correct",
+        "npc_name": "§2좀비1",
+        "text": "으으... 맞아.\n\n§1방마다 다른 방법§r이라\n파쿠르, 퍼즐, 미로를\n한 맵 안에 전부 담을 수 있어.\n\n플레이어는 계속\n§6새로운 도전§r을 하게 되지.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_wrong",
+        "npc_name": "§2좀비1",
+        "text": "으... 틀렸어.\n\n방탈출은 §c단순하지 않아.§r\n방마다 §1다른 방법§r으로 탈출해.\n\n그래서 파쿠르, 퍼즐, 미로\n전부 한 맵에 넣을 수 있는 거야.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_variety"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비1,r=10] @initiator zombie1_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie1_bye",
+        "npc_name": "§2좀비1",
+        "text": "으으...\n9개 방이 기다리고 있어.\n\n§6황룡사§r를 다시 세우듯\n한 층씩 올라가봐.",
+        "buttons": []
+      }
+
+    ]
+  }
+}

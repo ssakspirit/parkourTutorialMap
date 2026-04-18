@@ -1,0 +1,139 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "enderman6_intro",
+        "npc_name": "§8엔더맨6",
+        "text": "...여기까지 왔군.\n\n§6수고했어.§r\n끝까지 온 게 맞아.\n\n아래를 봐.\n무섭다고? 괜찮아.",
+        "buttons": [
+          {
+            "name": "도착 알림이 왜 중요해?",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_reward"]
+          },
+          {
+            "name": "아래가 뭐야?",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_dropper"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_quiz"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_reward",
+        "npc_name": "§8엔더맨6",
+        "text": "파쿠르가 끝났다는 걸\n§1명확하게 알려줘야 해.§r\n\n불꽃놀이, 효과음,\n§6보상 아이템§r...\n\n클리어했다는 느낌이\n없으면 허무하거든.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_intro"]
+          },
+          {
+            "name": "아래가 뭐야?",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_dropper"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_dropper",
+        "npc_name": "§8엔더맨6",
+        "text": "아래에 §6슬라임 블록§r이 있어.\n\n높아도 괜찮아.\n슬라임 위에 떨어지면\n§2데미지 없이§r 통통 튀거든.\n\n이게 §1드로퍼§r야.\n뛰어내리면 다음 단계로 가.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_quiz"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_quiz",
+        "npc_name": "§8엔더맨6",
+        "text": "...마지막 테스트야.\n\n높은 곳에서\n§6슬라임 블록§r으로 떨어지면?",
+        "buttons": [
+          {
+            "name": "데미지를 받는다",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_wrong"]
+          },
+          {
+            "name": "데미지 없이 튀어오른다",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_correct"]
+          },
+          {
+            "name": "즉사한다",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_wrong"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_correct",
+        "npc_name": "§8엔더맨6",
+        "text": "...맞아.\n\n§6슬라임 블록§r은\n§2낙하 데미지를 막아줘.§r\n\n드로퍼에 자주 쓰이는 이유야.\n이제 진짜 내려가도 돼.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_intro"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_wrong",
+        "npc_name": "§8엔더맨6",
+        "text": "...틀렸어.\n\n§6슬라임 블록§r은\n낙하 데미지를 §2막아줘.§r\n죽지 않아.\n\n그냥 통통 튀는 거야.\n무서워하지 마.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_dropper"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_quiz"]
+          },
+          {
+            "name": "내려갈게.",
+            "commands": ["/dialogue open @e[name=엔더맨6,r=10] @initiator enderman6_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "enderman6_bye",
+        "npc_name": "§8엔더맨6",
+        "text": "...잘했어.\n진짜로.\n\n이제 뛰어내려.\n슬라임이 받아줄 거야.\n\n다음 단계에서 보자.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
