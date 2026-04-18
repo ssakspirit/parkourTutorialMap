@@ -2,98 +2,118 @@
   "format_version": "1.17",
   "minecraft:npc_dialogue": {
     "scenes": [
-
       {
         "scene_tag": "stevecoding2_intro",
-        "npc_name": "§6스티브코딩",
-        "text": "계속이야.\n\n이번엔 §1플레이 방식§r과\n§6시간 설계§r, 그리고\n§2교육 내용§r에 관한 규칙이야.\n\n맵을 완성하기 전에\n반드시 확인해야 해.",
+        "npc_name": "§5스티브코딩",
+        "text": "계속이야.\n\n이번엔 §1플레이 방식§r과\n§5시간 설계§r, 그리고\n§2교육 내용§r에 관한 규칙이야.\n\n맵을 완성하기 전에\n반드시 확인해야 해.",
         "buttons": [
           {
             "name": "플레이 모드가 뭐야?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule3"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule3"
+            ]
           },
           {
             "name": "클리어 타임은?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"
+            ]
           },
           {
             "name": "교육 내용은 어떻게 넣어?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule5"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule5"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding2_rule3",
-        "npc_name": "§6스티브코딩",
-        "text": "§1규칙 3 — 플레이 모드§r\n\n§6협동형§r: 멀티플레이 기준 설계.\n모든 플레이어가 목표 지점에\n도달해야 클리어야.\n혼자선 못 통과하는\n구간을 넣는 걸 권장해.\n\n§1경쟁형§r: 먼저 도착한 플레이어 승리.\n솔로 플레이도 가능해야 해.",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 3 — 플레이 모드§r\n\n§5협동형§r: 멀티플레이 기준 설계.\n모든 플레이어가 목표 지점에\n도달해야 클리어야.\n혼자선 못 통과하는\n구간을 넣는 걸 권장해.\n\n§1경쟁형§r: 먼저 도착한 플레이어 승리.\n솔로 플레이도 가능해야 해.",
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"
+            ]
           },
           {
             "name": "클리어 타임은?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding2_rule4",
-        "npc_name": "§6스티브코딩",
-        "text": "§1규칙 4 — 클리어 타임§r\n\n제작자가 직접 플레이할 때\n§65분 내외§r가 되도록 설계해.\n\n일반 참가자 기준으로는\n§110분 이내§r를 목표로 해.\n\n너무 짧거나 길면\n행사 진행에 차질이 생겨.\n§c반드시 직접 완주 테스트§r를 해.",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 4 — 클리어 타임§r\n\n제작자가 직접 플레이할 때\n§55분 내외§r가 되도록 설계해.\n\n일반 참가자 기준으로는\n§110분 이내§r를 목표로 해.\n\n너무 짧거나 길면\n행사 진행에 차질이 생겨.\n§c반드시 직접 완주 테스트§r를 해.",
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"
+            ]
           },
           {
             "name": "교육 내용은 어떻게 넣어?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule5"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule5"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding2_rule5",
-        "npc_name": "§6스티브코딩",
-        "text": "§1규칙 5 — 교육 콘텐츠§r\n\n단순 장애물 통과로 끝나면 안 돼.\n§6스토리텔링§r, §1퀴즈§r, §2퍼즐§r 중\n하나 이상을 반드시 포함해.\n\n§8NPC 대화§r, §8팻말§r, §8책 아이템§r으로\n교과 내용, AI 소양,\n디지털 시민 의식 같은 주제를\n자유롭게 녹여낼 수 있어.",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 5 — 교육 콘텐츠§r\n\n단순 장애물 통과로 끝나면 안 돼.\n§5스토리텔링§r, §1퀴즈§r, §2퍼즐§r 중\n하나 이상을 반드시 포함해.\n\n§8NPC 대화§r, §8팻말§r, §8책 아이템§r으로\n교과 내용, AI 소양,\n디지털 시민 의식 같은 주제를\n자유롭게 녹여낼 수 있어.",
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_intro"
+            ]
           },
           {
             "name": "클리어 타임은?",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_rule4"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩2,r=10] @initiator stevecoding2_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding2_bye",
-        "npc_name": "§6스티브코딩",
-        "text": "플레이 모드, 클리어 타임,\n교육 내용.\n\n이 세 가지가 있어야\n§1완성된 맵§r이야.\n\n마지막 규칙은\n§6옆에 있는 나§r한테 물어봐.",
+        "npc_name": "§5스티브코딩",
+        "text": "플레이 모드, 클리어 타임,\n교육 내용.\n\n이 세 가지가 있어야\n§1완성된 맵§r이야.\n\n마지막 규칙은\n§5뒤에 있는 나§r한테 물어봐.",
         "buttons": []
       }
-
     ]
   }
 }

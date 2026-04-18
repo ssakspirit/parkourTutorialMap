@@ -2,74 +2,87 @@
   "format_version": "1.17",
   "minecraft:npc_dialogue": {
     "scenes": [
-
       {
         "scene_tag": "stevecoding1_intro",
-        "npc_name": "§6스티브코딩",
-        "text": "안녕. 나는 §6스티브코딩§r이야.\n이 튜토리얼 월드의 제작자지.\n\n이 맵을 만들면서\n지킨 §1제작 규칙§r들이 있어.\n\n너도 맵을 만든다면\n꼭 알아야 할 것들이야.",
+        "npc_name": "§5스티브코딩",
+        "text": "안녕. 나는 §5스티브코딩§r이야.\n이 튜토리얼 월드의 제작자지.\n\n이 맵을 만들면서\n지킨 §1제작 규칙§r들이 있어.\n\n너도 맵을 만든다면\n꼭 알아야 할 것들이야.",
         "buttons": [
           {
             "name": "맵 크기 제한이 뭐야?",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule1"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule1"
+            ]
           },
           {
             "name": "출발 위치는 어떻게 설정해?",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule2"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule2"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding1_rule1",
-        "npc_name": "§6스티브코딩",
-        "text": "§1규칙 1 — 맵 크기 제한§r\n\n§6X, Z축§r 기준으로\n§164×64 블록§r 이내로 만들어야 해.\n\n높이(§6Y축§r)는\n최대 §1200칸§r까지 가능해.\n\n경계를 넘는 구조물이나\n장치는 허용하지 않아.",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 1 — 맵 크기 제한§r\n\n§5X, Z축§r 기준으로\n§164×64 블록§r 이내로 만들어야 해.\n\n높이(§5Y축§r)는\n최대 §1200칸§r까지 가능해.\n\n경계를 넘는 구조물이나\n장치는 허용하지 않아.",
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_intro"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_intro"
+            ]
           },
           {
             "name": "출발 위치는 어떻게 설정해?",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule2"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule2"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding1_rule2",
-        "npc_name": "§6스티브코딩",
-        "text": "§1규칙 2 — 출발 위치 설정§r\n\n플레이어의 시작 위치는\n§6/setworldspawn§r 명령어로\n반드시 지정해야 해.\n\n맵을 처음 열었을 때\n§1스타트 지점§r에 바로 등장해야 해.\n\n빈 공간에서 시작되면 안 돼.",
+        "npc_name": "§5스티브코딩",
+        "text": "§1규칙 2 — 출발 위치 설정§r\n\n플레이어의 시작 위치는\n§5/setworldspawn§r 명령어로\n반드시 지정해야 해.\n\n맵을 처음 열었을 때\n§1스타트 지점§r에 바로 등장해야 해.\n\n빈 공간에서 시작되면 안 돼.",
         "buttons": [
           {
             "name": "← 돌아가기",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_intro"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_intro"
+            ]
           },
           {
             "name": "맵 크기 제한이 뭐야?",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule1"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_rule1"
+            ]
           },
           {
             "name": "그럼 이만.",
-            "commands": ["/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"]
+            "commands": [
+              "/dialogue open @e[name=스티브코딩1,r=10] @initiator stevecoding1_bye"
+            ]
           }
         ]
       },
-
       {
         "scene_tag": "stevecoding1_bye",
-        "npc_name": "§6스티브코딩",
-        "text": "크기와 출발 위치.\n이 두 가지부터 잡아야\n§1맵 설계가 시작§r돼.\n\n옆에 있는 §6나§r한테\n더 물어봐.",
+        "npc_name": "§5스티브코딩",
+        "text": "크기와 출발 위치.\n이 두 가지부터 잡아야\n§1맵 설계가 시작§r돼.\n\n길을 따라가봐.",
         "buttons": []
       }
-
     ]
   }
 }
