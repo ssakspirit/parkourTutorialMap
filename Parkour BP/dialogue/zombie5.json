@@ -1,0 +1,167 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+
+      {
+        "scene_tag": "zombie5_intro",
+        "npc_name": "§2좀비5",
+        "text": "으으... 위를 봐.\n\n저 §6스님 NPC§r 말이야.\n대화가 계속 이어지고 있지.\n\n근데 사실...\n§1스님이 두 명이야.§r\n하나는 숨겨져 있어. 으으.",
+        "buttons": [
+          {
+            "name": "어떻게 이어지는 거야?",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_chain"]
+          },
+          {
+            "name": "숨겨진 NPC?",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_hidden"]
+          },
+          {
+            "name": "언제 쓰면 좋아?",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_why"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_chain",
+        "npc_name": "§2좀비5",
+        "text": "으으... 버튼 명령어야.\n\n첫 번째 NPC의 버튼에\n§6/dialogue open§r 명령어를 넣어.\n\n대상은 §1숨겨진 NPC§r,\n씬 태그는 이어질 대사.\n\n플레이어 눈엔 §2한 NPC§r가\n계속 말하는 것처럼 보여. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_intro"]
+          },
+          {
+            "name": "숨겨진 NPC?",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_hidden"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_hidden",
+        "npc_name": "§2좀비5",
+        "text": "으으... 트릭이야.\n\n보이는 스님 대화가 끝나면\n버튼 명령어로\n§6숨겨진 스님§r의 대화창을 열어.\n\n이름, 외형은 §1똑같이§r 설정하면\n플레이어는 모르지.\n\n§2벽 뒤나 바닥 아래§r에 숨겨. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_intro"]
+          },
+          {
+            "name": "언제 쓰면 좋아?",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_why"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_why",
+        "npc_name": "§2좀비5",
+        "text": "으으... 대사가 길면 써.\n\nNPC 한 명의 대사창은\n§c길이 제한§r이 있어.\n\n내용이 많으면\n그냥 잘리거나 못생겨져.\n\n§6NPC를 이어서 연결§r하면\n§1대사를 깔끔하게§r 나눌 수 있어. 으으.",
+        "buttons": [
+          {
+            "name": "← 돌아가기",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_intro"]
+          },
+          {
+            "name": "퀴즈 도전!",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_quiz",
+        "npc_name": "§2좀비5",
+        "text": "으으... 테스트.\n\nNPC 대화를 자연스럽게\n이어가는 방법은?",
+        "buttons": [
+          {
+            "name": "대사를 한 NPC에 전부 넣는다",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_wrong"]
+          },
+          {
+            "name": "숨겨진 NPC에 dialogue open으로 연결",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_correct"]
+          },
+          {
+            "name": "NPC를 여러 개 나란히 세운다",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_wrong"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_correct",
+        "npc_name": "§2좀비5",
+        "text": "으으... 맞아.\n\n§6숨겨진 NPC§r에\n§1/dialogue open§r으로 연결하면\n\n플레이어 눈엔\n한 NPC가 계속 말하는 것처럼 보여.\n\n대사가 길어도\n§2깔끔하게§r 나눌 수 있어.",
+        "buttons": [
+          {
+            "name": "← 처음으로",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_intro"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_wrong",
+        "npc_name": "§2좀비5",
+        "text": "으... 틀렸어.\n\n§c한 NPC에 전부 넣으면§r\n대사창이 넘쳐.\n§c나란히 세우면§r\n플레이어가 직접 찾아가야 해.\n\n§6숨겨진 NPC§r에\n§1/dialogue open§r으로 넘기면\n자연스럽게 이어져. 으으.",
+        "buttons": [
+          {
+            "name": "← 다시 보기",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_hidden"]
+          },
+          {
+            "name": "퀴즈 다시!",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_quiz"]
+          },
+          {
+            "name": "그럼 이만.",
+            "commands": ["/dialogue open @e[name=좀비5,r=10] @initiator zombie5_bye"]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "zombie5_bye",
+        "npc_name": "§2좀비5",
+        "text": "으으...\n\n저 스님도 사실\n§6두 명이야.§r\n\n하나는 보이고\n§1하나는 숨어 있어.§r\n\n그게 대화를 이어가는 방식이야.",
+        "buttons": []
+      }
+
+    ]
+  }
+}
